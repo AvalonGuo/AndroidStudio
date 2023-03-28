@@ -15,6 +15,7 @@ public class HuntGameUnitTest {
         WuPusGame game = new WuPusGame();
         game.initRoom(9);
         game.setPlayerRoom(4);
-        assertEquals(9,game.initRoom(9));
+        game.score();
+        assertEquals(1,game.score());
     }
 }

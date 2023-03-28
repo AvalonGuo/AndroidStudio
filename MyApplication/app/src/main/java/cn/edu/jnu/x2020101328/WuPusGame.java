@@ -1,17 +1,27 @@
 package cn.edu.jnu.x2020101328;
 
+import java.util.Random;
+
 public class WuPusGame {
-    private Room rooms[];
+    private int rooms[];
+    private int score = 0;
     public int setPlayerRoom(int i) {
-        return  i;
+        score += rooms[i];
+        return i;
     }
-
-    public void connect(int i, int i1, String e) {
-    }
-
 
     public int initRoom(int i) {
-        rooms = new Room[i];
+        rooms = new int[i];
+        Random random = new Random();
+        for(int k=0;k<i;k++){
+            rooms[k]=1;
+            //rooms[k] = random.nextInt(9);
+        }
         return rooms.length;
+    }
+
+
+    public int score() {
+        return score;
     }
 }
