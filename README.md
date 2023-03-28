@@ -6,3 +6,5 @@
 ![1679977569186](https://user-images.githubusercontent.com/99348377/228128124-2735bcb1-a2f2-4659-acda-7f9dc5e1d4eb.png)
 ### test3：score
 ![1679979799436](https://user-images.githubusercontent.com/99348377/228133383-e5dc45a2-c8d4-40bd-a233-407a520c5ba2.png)
+### test4：game.next()
+![1679980087515](https://user-images.githubusercontent.com/99348377/228134018-8122a4be-d6db-4625-bd2d-fa9b8cf1b10a.png)
