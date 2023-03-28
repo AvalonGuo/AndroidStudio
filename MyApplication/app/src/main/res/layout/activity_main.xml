@@ -6,23 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <EditText
+        android:id="@+id/edit_score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
     <Button
         android:id="@+id/Button1"
         android:layout_width="113dp"
         android:layout_height="71dp"
         android:layout_marginEnd="33dp"
-        android:text="Button"
+        android:text="计分"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_score_text"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="171dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/text_view"
+        android:layout_width="120dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="60dp"
+        android:text="Score"
+        app:layout_constraintStart_toStartOf="@+id/edit_score_text"
+        app:layout_constraintTop_toBottomOf="@+id/edit_score_text"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
