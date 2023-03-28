@@ -28,11 +28,18 @@ public class WuPusGame {
         return score;
     }
 
-    public int next() {
+    public void next() {
         if(location< rooms.length)
             location+=1;
         score+= rooms[location];
         rooms[location] = 0;
-        return score;
+        return;
+    }
+
+    public void back() {
+        if (location>0)
+            location-=1;
+        score += rooms[location];
+        rooms[location] = 0;
     }
 }
