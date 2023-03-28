@@ -5,8 +5,11 @@ import java.util.Random;
 public class WuPusGame {
     private int rooms[];
     private int score = 0;
+    private int location;
     public int setPlayerRoom(int i) {
+        location = i;
         score += rooms[i];
+        rooms[i]=0;
         return i;
     }
 
@@ -22,6 +25,14 @@ public class WuPusGame {
 
 
     public int score() {
+        return score;
+    }
+
+    public int next() {
+        if(location< rooms.length)
+            location+=1;
+        score+= rooms[location];
+        rooms[location] = 0;
         return score;
     }
 }

@@ -16,6 +16,7 @@ public class HuntGameUnitTest {
         game.initRoom(9);
         game.setPlayerRoom(4);
         game.score();
-        assertEquals(1,game.score());
+        game.next();
+        assertEquals(2,game.score());
     }
 }
