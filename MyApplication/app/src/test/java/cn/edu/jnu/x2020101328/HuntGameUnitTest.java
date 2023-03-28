@@ -13,7 +13,8 @@ public class HuntGameUnitTest {
     @Test
     public void testMove(){
         WuPusGame game = new WuPusGame();
+        game.initRoom(9);
         game.setPlayerRoom(4);
-        assertEquals(4,game.setPlayerRoom(4));
+        assertEquals(9,game.initRoom(9));
     }
 }
